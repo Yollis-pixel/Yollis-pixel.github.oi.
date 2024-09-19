@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre Mim</a></li>
+                <li><a href="educacao.html">Educação</a></li>
+                <li><a href="projectos.html">Projectos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Meus Projectos</h2>
+
+            <div class="projeto">
+                <h3>Calculadora Web</h3>
+                <button class="botao" onclick="toggleDescription('desc1')">Ver Descrição</button>
+                <p id="desc1" class="descricao" style="display: none;">Uma calculadora básica que permite realizar operações matemáticas simples, como adição, subtração, multiplicação e divisão. O design é responsivo e a interface é intuitiva.</p>
+                <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript</p>
+            </div>
+
+            <div class="projeto">
+                <h3>Lista de Tarefas</h3>
+                <button class="botao" onclick="toggleDescription('desc2')">Ver Descrição</button>
+                <p id="desc2" class="descricao" style="display: none;">Um aplicativo onde os usuários podem adicionar, remover e marcar tarefas como concluídas. Utiliza o Local Storage para salvar as tarefas mesmo após o fechamento do navegador.</p>
+                <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript, Local Storage</p>
+            </div>
+
+            <div class="projeto">
+                <h3>Jogo da Adivinhação</h3>
+                <button class="botao" onclick="toggleDescription('desc3')">Ver Descrição</button>
+                <p id="desc3" class="descricao" style="display: none;">Um jogo interativo onde o usuário deve adivinhar um número gerado aleatoriamente pelo computador. O jogo fornece dicas sobre se o palpite é alto ou baixo e conta o número de tentativas.</p>
+                <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function toggleDescription(descId) {
+            const descElement = document.getElementById(descId);
+            descElement.style.display = descElement.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+
+    <footer>
+        <p>&copy;2024 Yolanda</p>
+    </footer>
+</body>
+</html>
+
